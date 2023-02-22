@@ -1,0 +1,13 @@
+<h1 style="text-align:center;">Resturants</h1>
+
+<ol class="event-schedule-area-two bg-color pad100" style="text-align:left;">
+  <% @restaurants.each do |restaurant| %>
+    <li class="d-style btn btn-brc-tp border-2 bgc-white btn-outline-blue btn-h-outline-blue btn-a-outline-blue w-100 my-2 py-3 shadow-sm">
+    <%= restaurant.name %><br>
+    <%= restaurant.address%><br>
+    <%= restaurant.category %><br>
+    </li>
+  <% end %>
+</ol>
+
+<%= link_to 'add new restaurant', '/restaurants/new' %>
